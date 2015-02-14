@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+
+        <title>uAdmin - Professional, Responsive and Flat Admin Template</title>
+
+        <meta name="description" content="uAdmin is a Professional, Responsive and Flat Admin Template created by pixelcave and published on Themeforest">
+        <meta name="author" content="pixelcave">
+        <meta name="robots" content="noindex, nofollow">
+
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <!-- Icons -->
+        <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon-57x57-precomposed.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png">
+        <!-- END Icons -->
+
+        <!-- Stylesheets -->
+        <!-- The roboto font is included from Google Web Fonts -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic">
+
+        <!-- Bootstrap 2.3.2 is included in its original form, unaltered -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+
+        <!-- Related styles of various javascript plugins -->
+        <link rel="stylesheet" href="css/plugins.css">
+
+        <!-- The main stylesheet of this template. All Bootstrap overwrites are defined in here -->
+        <link rel="stylesheet" href="css/main.css">
+
+        <!-- Load a specific file here from css/themes/ folder to alter the default theme of all the template -->
+
+        <!-- The themes stylesheet of this template (for using specific theme color in individual elements (must included last) -->
+        <link rel="stylesheet" href="css/themes.css">
+        <!-- END Stylesheets -->
+
+        <!-- Modernizr (Browser feature detection library) & Respond.js (Enable responsive CSS code on browsers that don't support them) -->
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+
+    <!-- Add the class .fixed to <body> for a fixed layout on large resolutions (min: 1200px) -->
+    <!-- <body class="fixed"> -->
+    <body>
+        <!-- Page Container -->
+        <div id="page-container">
+            <!-- Header -->
+            <!-- Add the class .navbar-fixed-top or .navbar-fixed-bottom for a fixed header on top or bottom respectively -->
+            <!-- <header class="navbar navbar-inverse navbar-fixed-top"> -->
+            <!-- <header class="navbar navbar-inverse navbar-fixed-bottom"> -->
+            <header class="navbar navbar-inverse">
+                <!-- Navbar Inner -->
+                <div class="navbar-inner remove-radius remove-box-shadow">
+                    <!-- div#container-fluid -->
+                    <div class="container-fluid">
+                        <!-- Mobile Navigation, Shows up  on smaller screens -->
+                        <ul class="nav pull-right visible-phone visible-tablet">
+                            <li class="divider-vertical remove-margin"></li>
+                            <li>
+                                <!-- It is set to open and close the main navigation on smaller screens. The class .nav-collapse was added to aside#page-sidebar -->
+                                <a href="javascript:void(0)" data-toggle="collapse" data-target=".nav-collapse">
+                                    <i class="icon-reorder"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- END Mobile Navigation -->
+
+                        <!-- Logo -->
+                        <a href="index.html" class="brand"><img src="img/template/logo.png" alt="logo"></a>
+
+                        <!-- Loading Indicator, Used for demostrating how loading of widgets could happen, check main.js - uiDemo() -->
+                        <div id="loading" class="hide pull-left"><i class="icon-certificate icon-spin"></i></div>
+
+                        <!-- Header Widgets -->
+                        <!-- You can create the widgets you want by replicating the following. Each one exists in a <li> element -->
+                        <ul id="widgets" class="nav pull-right">
+
+                            <!-- Just a divider -->
+                            <li class="divider-vertical remove-margin"></li>
+
+                            <!-- RSS Widget -->
+                            <!-- Add .dropdown-left-responsive class to align the dropdown menu left (so its visible on mobile) -->
+                            <li id="rss-widget" class="dropdown dropdown-left-responsive">
+                                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="icon-rss"></i>
+                                    <span class="badge badge-warning display-none"></span>
+                                </a>
+                                <!-- By adding the class .widget-fluid, dropdown width will be set to auto with min value 180px and max value 250px -->
+                                <ul class="dropdown-menu widget widget-fluid">
+                                    <li class="widget-heading text-center">Web Design</li>
+                                    <li class="li-hover"><a href="javascript:void(0)" class="widget-link"><i class="icon-umbrella"></i>This is a headline</a></li>
+                                    <li class="divider"></li>
+                                    <li class="li-hover"><a href="javascript:void(0)" class="widget-link"><i class="icon-trophy"></i>Another headline</a></li>
+                                    <li class="divider"></li>
+                                    <li class="li-hover"><a href="javascript:void(0)" class="widget-link"><i class="icon-suitcase"></i>Headlines keep coming!</a></li>
+                                    <li class="widget-heading text-center">Web Developent</li>
+                                    <li class="li-hover"><a href="javascript:void(0)" class="widget-link"><i class="icon-phone"></i>New headline</a></li>
+                                    <li class="divider"></li>
+                                    <li class="li-hover"><a href="javascript:void(0)" class="widget-link"><i class="icon-pencil"></i>Another one</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="javascript:void(0)" class="text-center">All News</a></li>
+                                </ul>
+                            </li>
+                            <!-- END RSS Widget -->
+
+                            <li class="divider-vertical remove-margin"></li>
+
+                            <!-- Twitter Widget -->
+                            <!-- Add .dropdown-left-responsive class to align the dropdown menu left (so its visible on mobile) -->
+                            <li id="twitter-widget" class="dropdown dropdown-left-responsive">
+                                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="icon-twitter"></i>
+                                    <span class="badge badge-info display-none"></span>
+                                </a>
+                                <ul class="dropdown-menu widget">
+                                    <li class="widget-heading"><i class="icon-comments-alt pull-right"></i>Latest Tweets</li>
+                                    <li class="li-hover">
+                                        <div class="media">
+                                            <a class="pull-left" href="javascript:void(0)">
+                                                <img src="img/placeholders/image_dark_64x64.png" alt="fakeimg">
+                                            </a>
+                                            <div class="media-body">
+                                                <h6 class="media-heading"><a href="javascript:void(0)">Michael</a><span class="label label-info">just now</span></h6>
+                                                <div class="media">Web design all the way!</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li class="li-hover">
+                                        <div class="media">
+                                            <a class="pull-left" href="javascript:void(0)">
+                                                <img src="img/placeholders/image_dark_64x64.png" alt="fakeimg">
+                                            </a>
+                                            <div class="media-body">
+                                                <h6 class="media-heading"><a href="javascript:void(0)">Monica</a><span class="label label-info">3 min ago</span></h6>
+                                                <div class="media">Download free PSDs at <a href="http://bit.ly/YUs4SQ" target="_blank">http://bit.ly/YUs4SQ</a></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li class="li-hover">
+                                        <div class="media">
+                                            <a class="pull-left" href="javascript:void(0)">
+                                                <img src="img/placeholders/image_dark_64x64.png" alt="fakeimg">
+                                            </a>
+                                            <div class="media-body">
+                                                <h6 class="media-heading"><a href="javascript:void(0)">Steven</a><span class="label label-info">45 min ago</span></h6>
+                                                <div class="media">Be sure to check out my portfolio!</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li class="li-hover">
+                                        <div class="media">
+                                            <a class="pull-left" href="javascript:void(0)">
+                                                <img src="img/placeholders/image_dark_64x64.png" alt="fakeimg">
+                                            </a>
+                                            <div class="media-body">
+                                                <h6 class="media-heading"><a href="javascript:void(0)">Tim</a><span class="label label-info">1 hour ago</span></h6>
+                                                <div class="media">Get all our themes for free for the next 2 hours! <a href="javascript:void(0)">#freebies</a></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- END Twitter Widget -->
+
+                            <li class="divider-vertical remove-margin"></li>
+
+                            <!-- Messages Widget -->
+                            <!-- Add .dropdown-left-responsive class to align the dropdown menu left (so its visible on mobile) -->
+                            <li id="messages-widget" class="dropdown dropdown-left-responsive">
+                                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="icon-envelope"></i>
+                                    <!-- If the <span> element with .badge class has no content it will disappear (not in IE8 and below because of using :empty in CSS) -->
+                                    <span class="badge badge-success">1</span>
+                                </a>
+                                <ul class="dropdown-menu widget pull-right">
+                                    <li class="widget-heading"><i class="icon-comment pull-right"></i>Latest Messages</li>
+                                    <li class="new-on">
+                                        <div class="media">
+                                            <a class="pull-left" href="javascript:void(0)">
+                                                <img src="img/placeholders/image_light_64x64.png" alt="fakeimg">
+                                            </a>
+                                            <div class="media-body">
+                                                <h6 class="media-heading"><a href="javascript:void(0)">George</a><span class="label label-success">2 min ago</span></h6>
+                                                <div class="media">Thanks for your help! The tutorial really helped me a lot!</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <div class="media">
+                                            <a class="pull-left" href="javascript:void(0)">
+                                                <img src="img/placeholders/image_light_64x64.png" alt="fakeimg">
+                                            </a>
+                                            <div class="media-body">
+                                                <h6 class="media-heading"><a href="javascript:void(0)">Mike</a><span class="label">6 hours ago</span></h6>
+                                                <div class="media">The logo is ready, have a look and let me know what you think!</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <div class="media">
+                                            <a class="pull-left" href="javascript:void(0)">
+                                                <img src="img/placeholders/image_light_64x64.png" alt="fakeimg">
+                                            </a>
+                                            <div class="media-body">
+                                                <h6 class="media-heading"><a href="javascript:void(0)">Julia</a><span class="label">1 day ago</span></h6>
+                                                <div class="media">We should better consider our social media marketing strategy!</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li class="text-center"><a href="page_inbox.html">View All Messages</a></li>
+                                </ul>
+                            </li>
+                            <!-- END Messages Widget -->
+
+                            <li class="divider-vertical remove-margin"></li>
+
+                            <!-- Notifications Widget -->
+                            <!-- Add .dropdown-center-responsive class to align the dropdown menu center (so its visible on mobile) -->
+                            <li id="notifications-widget" class="dropdown dropdown-center-responsive">
+                                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="icon-flag"></i>
+                                    <span class="badge badge-important">1</span>
+                                    <span class="badge badge-warning">2</span>
+                                </a>
+                                <ul class="dropdown-menu widget">
+                                    <li class="widget-heading"><a href="javascript:void(0)" class="pull-right widget-link"><i class="icon-cog"></i></a><a href="javascript:void(0)" class="widget-link">System</a></li>
+                                    <li>
+                                        <ul>
+                                            <li class="label label-important">20 min ago</li>
+                                            <li class="text-error">Support system is down for maintenance!</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li class="label label-warning">3 hours ago</li>
+                                            <li class="text-warning">PHP upgrade started!</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li class="label label-warning">5 hours ago</li>
+                                            <li class="text-warning"><a href="javascript:void(0)" class="widget-link">1 support ticket</a> just opened!</li>
+                                        </ul>
+                                    </li>
+                                    <li class="widget-heading"><a href="javascript:void(0)" class="pull-right widget-link"><i class="icon-bookmark"></i></a><a href="javascript:void(0)" class="widget-link">Project #3</a></li>
+                                    <li>
+                                        <ul>
+                                            <li class="label label-success">3 weeks ago</li>
+                                            <li class="text-success">Project #3 <a href="javascript:void(0)" class="widget-link">published</a> successfully!</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li class="label label-info">1 month ago</li>
+                                            <li class="text-info">Milestone #3 achieved!</li>
+                                            <li class="text-info"><a href="javascript:void(0)" class="widget-link">John Doe</a> joined the project!</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li class="label">1 year ago</li>
+                                            <li class="text-muted">This is an old notification</li>
+                                        </ul>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li class="text-center"><a href="javascript:void(0)">View All Notifications</a></li>
+                                </ul>
+                            </li>
+                            <!-- END Notifications Widget -->
+
+                            <li class="divider-vertical remove-margin"></li>
+
+                            <!-- User Menu -->
+                            <li class="dropdown dropdown-user">
+                                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"><img src="img/template/avatar.png" alt="avatar"> <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <!-- Just a button demostrating how loading of widgets could happen, check main.js- - uiDemo() -->
+                                    <li>
+                                        <a href="javascript:void(0)" class="loading-on"><i class="icon-refresh"></i> Refresh</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <!-- Modal div is at the bottom of the page before including javascript code -->
+                                        <a href="#modal-user-settings" role="button" data-toggle="modal"><i class="icon-user"></i> User Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><i class="icon-wrench"></i> App Settings</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="page_login.html"><i class="icon-lock"></i> Log out</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- END User Menu -->
+                        </ul>
+                        <!-- END Header Widgets -->
+                    </div>
+                    <!-- END div#container-fluid -->
+                </div>
+                <!-- END Navbar Inner -->
+            </header>
+            <!-- END Header -->
+
+            <!-- Inner Container -->
+            <div id="inner-container"><!-- Sidebar -->
+                <aside id="page-sidebar" class="nav-collapse collapse">
+                    <!-- Sidebar search -->
+                    <form id="sidebar-search" action="page_search_results.html" method="post">
+                        <div class="input-append">
+                            <input type="text" placeholder="Search.." class="remove-box-shadow remove-transition remove-radius">
+                            <button><i class="icon-search"></i></button>
+                        </div>
+                    </form>
+                    <!-- END Sidebar search -->
+
+                    <!-- Primary Navigation -->
+                    <nav id="primary-nav">
+                        <ul>
+                            <li>
+                                <a href="index.html"><i class="icon-fire"></i>Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="icon-magic"></i>UI Elements</a>
+                                <ul>
+                                    <li>
+                                        <a href="page_ui_general.html"><i class="icon-star"></i>General</a>
+                                    </li>
+                                    <li>
+                                        <a href="page_forms.html"><i class="icon-th-list"></i>Forms</a>
+                                    </li>
+                                    <li>
+                                        <a href="page_tables.html"><i class="icon-table"></i>Tables</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="active">
+                                <a href="#"><i class="icon-leaf"></i>Components</a>
+                                <ul>
+                                    <li>
+                                        <a href="page_charts.html"><i class="icon-bar-chart"></i>Charts</a>
+                                    </li>
+                                    <li>
+                                        <a href="page_calendar.html"><i class="icon-calendar"></i>Calendar</a>
+                                    </li>
+                                    <li>
+                                        <a href="page_datatables.html" class="active"><i class="icon-th"></i>DataTables</a>
+                                    </li>
+                                    <li>
+                                        <a href="page_datatables_editable.html"><i class="icon-pencil"></i>Editable DataTables</a>
+                                    </li>
+                                    <li>
+                                        <a href="page_maps.html"><i class="icon-map-marker"></i>Maps</a>
+                                    </li>
+                                    <li>
+                                        <a href="page_form_validation.html"><i class="icon-warning-sign"></i>Form Validation</a>
+                                    </li>
+                                    <li>
+                                        <a href="page_form_wizard.html"><i class="icon-magic"></i>Form Wizard</a>
+                                    </li>
+                                    <li>
+                                        <a href="page_syntax_highlighting.html"><i class="icon-beaker"></i>Syntax Highlighting</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="page_typography.html"><i class="icon-font"></i>Typography</a>
+                            </li>
+                            <li>
+                                <a href="page_gallery.html"><i class="icon-picture"></i>Gallery</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="icon-tint"></i>Icons</a>
+                                <ul>
+                                    <li>
+                                        <a href="page_glyphicons_pro.html">Glyphicons PRO</a>
+                                    </li>
+                                    <li>
+                                        <a href="page_glyphicons_halflings_pro.html">Glyphicons Halflings PRO</a>
+                                    </li>
+                                    <li>
+                                        <a href="page_fontawesome.html">FontAwesome</a>
+                                    </li>
+                                    <li>
+                                        <a href="page_gemicon.html">Gemicon</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><i class="icon-file-alt"></i>Pages</a>
+                                <ul>
+                                    <li>
+                                        <a href="page_inbox.html"><i class="icon-envelope"></i>Inbox</a>
+                                    </li>
+                                    <li>
+                                        <a href="page_chatui.html"><i class="icon-comments"></i>ChatUI</a>
+                                    </li>
+                                    <li>
+                                        <a href="page_search_results.html"><i class="icon-search"></i>Search Results</a>
+                                    </li>
+                                    <li>
+                                        <a href="page_price_tables.html"><i class="icon-ticket"></i>Price Tables</a>
+                                    </li>
+                                    <li>
+                                        <a href="page_article.html"><i class="icon-pencil"></i>Article</a>
+                                    </li>
+                                    <li>
+                                        <a href="page_invoice.html"><i class="icon-book"></i>Invoice</a>
+                                    </li>
+                                    <li>
+                                        <a href="page_profile.html"><i class="icon-user"></i>Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="page_faq.html"><i class="icon-flag"></i>FAQ</a>
+                                    </li>
+                                    <li>
+                                        <a href="page_errors.html"><i class="icon-warning-sign"></i>Errors</a>
+                                    </li>
+                                    <li>
+                                        <a href="page_blank.html"><i class="icon-circle-blank"></i>Blank</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="page_login.html"><i class="icon-off"></i>Login Page</a>
+                            </li>
+                            <li>
+                                <a href="page_landing.html"><i class="icon-rocket"></i>Landing Page</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- END Primary Navigation -->
+
+                    <!-- Demo Theme Options -->
+                    <div id="theme-options" class="text-left hidden-phone hidden-tablet">
+                        <a href="#" class="btn btn-theme-options"><i class="icon-cog"></i> Theme Options</a>
+                        <div id="theme-options-content">
+                            <h5>Color Themes</h5>
+                            <ul class="theme-colors clearfix">
+                                <li class="active">
+                                    <a href="javascript:void(0)" class="themed-background-default themed-border-default" data-theme="default" data-toggle="tooltip" title="Default"></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="themed-background-deepblue themed-border-deepblue" data-theme="css/themes/deepblue.css" data-toggle="tooltip" title="DeepBlue"></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="themed-background-deepwood themed-border-deepwood" data-theme="css/themes/deepwood.css" data-toggle="tooltip" title="DeepWood"></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="themed-background-deeppurple themed-border-deeppurple" data-theme="css/themes/deeppurple.css" data-toggle="tooltip" title="DeepPurple"></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="themed-background-deepgreen themed-border-deepgreen" data-theme="css/themes/deepgreen.css" data-toggle="tooltip" title="DeepGreen"></a>
+                                </li>
+                            </ul>
+                            <h5>Header</h5>
+                            <div id="topt-fixed-header-top" class="input-switch switch-mini" data-toggle="tooltip" title="Top fixed header" data-on="success" data-off="danger" data-on-label="<i class='icon-ok icon-white'></i>" data-off-label="<i class='icon-remove'></i>">
+                                <input type="checkbox">
+                            </div>
+                            <div id="topt-fixed-header-bottom" class="input-switch switch-mini" data-toggle="tooltip" title="Bottom fixed header" data-on="success" data-off="danger" data-on-label="<i class='icon-ok icon-white'></i>" data-off-label="<i class='icon-remove'></i>">
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Demo Theme Options -->
+                </aside>
+                <!-- END Sidebar -->
+                <!-- Page Content -->
+                <div id="page-content">
+                    <!-- Navigation info -->
+                    <ul id="nav-info" class="clearfix">
+                        <li><a href="index.html"><i class="icon-home"></i></a></li>
+                        <li><a href="javascript:void(0)">Components</a></li>
+                        <li class="active"><a href="">DataTables</a></li>
+                    </ul>
+                    <!-- END Navigation info -->
+
+                    <!-- Datatables -->
+                    <h3 class="page-header page-header-top">Advanced Tables <small>Full DataTables Integration</small></h3>
+
+                    <table id="example-datatables" class="table table-striped table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th class="span1"></th>
+                                <th class="span1 hidden-phone">#</th>
+                                <th><i class="icon-user"></i> Username</th>
+                                <th class="hidden-phone hidden-tablet"><i class="icon-envelope-alt"></i> Email</th>
+                                <th><i class="icon-bolt"></i> Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="span1">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-mini btn-success"><i class="icon-pencil"></i></a>
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-mini btn-danger"><i class="icon-remove"></i></a>
+                                    </div>
+                                </td>
+                                <td class="span1 hidden-phone">1</td>
+                                <td><a href="javascript:void(0)">username1</a></td>
+                                <td class="hidden-phone hidden-tablet">user1@example.com</td>
+                                <td><span class="label label-important">Unapproved</span></td>
+                            </tr>
+                            <tr>
+                                <td class="span1">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-mini btn-success"><i class="icon-pencil"></i></a>
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-mini btn-danger"><i class="icon-remove"></i></a>
+                                    </div>
+                                </td>
+                                <td class="span1 hidden-phone">2</td>
+                                <td><a href="javascript:void(0)">username2</a></td>
+                                <td class="hidden-phone hidden-tablet">user2@example.com</td>
+                                <td><span class="label label-info">Manual Approval</span></td>
+                            </tr>
+                            <tr>
+                                <td class="span1">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-mini btn-success"><i class="icon-pencil"></i></a>
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-mini btn-danger"><i class="icon-remove"></i></a>
+                                    </div>
+                                </td>
+                                <td class="span1 hidden-phone">3</td>
+                                <td><a href="javascript:void(0)">username3</a></td>
+                                <td class="hidden-phone hidden-tablet">user3@example.com</td>
+                                <td><span class="label">Inactive</span></td>
+                            </tr>
+                            <tr>
+                                <td class="span1">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-mini btn-success"><i class="icon-pencil"></i></a>
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-mini btn-danger"><i class="icon-remove"></i></a>
+                                    </div>
+                                </td>
+                                <td class="span1 hidden-phone">4</td>
+                                <td><a href="javascript:void(0)">username4</a></td>
+                                <td class="hidden-phone hidden-tablet">user4@example.com</td>
+                                <td><span class="label label-important">Unapproved</span></td>
+                            </tr>
+                            <tr>
+                                <td class="span1">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-mini btn-success"><i class="icon-pencil"></i></a>
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-mini btn-danger"><i class="icon-remove"></i></a>
+                                    </div>
+                                </td>
+                                <td class="span1 hidden-phone">5</td>
+                                <td><a href="javascript:void(0)">username5</a></td>
+                                <td class="hidden-phone hidden-tablet">user5@example.com</td>
+                                <td><span class="label label-important">Unapproved</span></td>
+                            </tr>
+                            <tr>
+                                <td class="span1">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-mini btn-success"><i class="icon-pencil"></i></a>
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-mini btn-danger"><i class="icon-remove"></i></a>
+                                    </div>
+                                </td>
+                                <td class="span1 hidden-phone">6</td>
+                                <td><a href="javascript:void(0)">username6</a></td>
+                                <td class="hidden-phone hidden-tablet">user6@example.com</td>
+                                <td><span class="label label-warning">Pending..</span></td>
+                            </tr>
+                            <tr>
+                                <td class="span1">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-mini btn-success"><i class="icon-pencil"></i></a>
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-mini btn-danger"><i class="icon-remove"></i></a>
+                                    </div>
+                                </td>
+                                <td class="span1 hidden-phone">7</td>
+                                <td><a href="javascript:void(0)">username7</a></td>
+                                <td class="hidden-phone hidden-tablet">user7@example.com</td>
+                                <td><span class="label label-inverse">Spam Account</span></td>
+                            </tr>
+                            <tr>
+                                <td class="span1">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-mini btn-success"><i class="icon-pencil"></i></a>
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-mini btn-danger"><i class="icon-remove"></i></a>
+                                    </div>
+                                </td>
+                                <td class="span1 hidden-phone">8</td>
+                                <td><a href="javascript:void(0)">username8</a></td>
+                                <td class="hidden-phone hidden-tablet">user8@example.com</td>
+                                <td><span class="label label-success">Approved!</span></td>
+                            </tr>
+                            <tr>
+                                <td class="span1">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-mini btn-success"><i class="icon-pencil"></i></a>
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-mini btn-danger"><i class="icon-remove"></i></a>
+                                    </div>
+                                </td>
+                                <td class="span1 hidden-phone">9</td>
+                                <td><a href="javascript:void(0)">username9</a></td>
+                                <td class="hidden-phone hidden-tablet">user9@example.com</td>
+                                <td><span class="label label-success">Approved!</span></td>
+                            </tr>
+                            <tr>
+                                <td class="span1">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-mini btn-success"><i class="icon-pencil"></i></a>
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-mini btn-danger"><i class="icon-remove"></i></a>
+                                    </div>
+                                </td>
+                                <td class="span1 hidden-phone">10</td>
+                                <td><a href="javascript:void(0)">username10</a></td>
+                                <td class="hidden-phone hidden-tablet">user10@example.com</td>
+                                <td><span class="label label-important">Unapproved</span></td>
+                            </tr>
+                            <tr>
+                                <td class="span1">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-mini btn-success"><i class="icon-pencil"></i></a>
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-mini btn-danger"><i class="icon-remove"></i></a>
+                                    </div>
+                                </td>
+                                <td class="span1 hidden-phone">11</td>
+                                <td><a href="javascript:void(0)">username11</a></td>
+                                <td class="hidden-phone hidden-tablet">user11@example.com</td>
+                                <td><span class="label label-success">Approved!</span></td>
+                            </tr>
+                            <tr>
+                                <td class="span1">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-mini btn-success"><i class="icon-pencil"></i></a>
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-mini btn-danger"><i class="icon-remove"></i></a>
+                                    </div>
+                                </td>
+                                <td class="span1 hidden-phone">12</td>
+                                <td><a href="javascript:void(0)">username12</a></td>
+                                <td class="hidden-phone hidden-tablet">user12@example.com</td>
+                                <td><span class="label label-info">Manual Approval</span></td>
+                            </tr>
+                            <tr>
+                                <td class="span1">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-mini btn-success"><i class="icon-pencil"></i></a>
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-mini btn-danger"><i class="icon-remove"></i></a>
+                                    </div>
+                                </td>
+                                <td class="span1 hidden-phone">13</td>
+                                <td><a href="javascript:void(0)">username13</a></td>
+                                <td class="hidden-phone hidden-tablet">user13@example.com</td>
+                                <td><span class="label">Inactive</span></td>
+                            </tr>
+                            <tr>
+                                <td class="span1">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-mini btn-success"><i class="icon-pencil"></i></a>
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-mini btn-danger"><i class="icon-remove"></i></a>
+                                    </div>
+                                </td>
+                                <td class="span1 hidden-phone">14</td>
+                                <td><a href="javascript:void(0)">username14</a></td>
+                                <td class="hidden-phone hidden-tablet">user14@example.com</td>
+                                <td><span class="label">Inactive</span></td>
+                            </tr>
+                            <tr>
+                                <td class="span1">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-mini btn-success"><i class="icon-pencil"></i></a>
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-mini btn-danger"><i class="icon-remove"></i></a>
+                                    </div>
+                                </td>
+                                <td class="span1 hidden-phone">15</td>
+                                <td><a href="javascript:void(0)">username15</a></td>
+                                <td class="hidden-phone hidden-tablet">user15@example.com</td>
+                                <td><span class="label label-success">Approved!</span></td>
+                            </tr>
+                            <tr>
+                                <td class="span1">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-mini btn-success"><i class="icon-pencil"></i></a>
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-mini btn-danger"><i class="icon-remove"></i></a>
+                                    </div>
+                                </td>
+                                <td class="span1 hidden-phone">16</td>
+                                <td><a href="javascript:void(0)">username16</a></td>
+                                <td class="hidden-phone hidden-tablet">user16@example.com</td>
+                                <td><span class="label label-inverse">Spam Account</span></td>
+                            </tr>
+                            <tr>
+                                <td class="span1">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-mini btn-success"><i class="icon-pencil"></i></a>
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-mini btn-danger"><i class="icon-remove"></i></a>
+                                    </div>
+                                </td>
+                                <td class="span1 hidden-phone">17</td>
+                                <td><a href="javascript:void(0)">username17</a></td>
+                                <td class="hidden-phone hidden-tablet">user17@example.com</td>
+                                <td><span class="label label-inverse">Spam Account</span></td>
+                            </tr>
+                            <tr>
+                                <td class="span1">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-mini btn-success"><i class="icon-pencil"></i></a>
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-mini btn-danger"><i class="icon-remove"></i></a>
+                                    </div>
+                                </td>
+                                <td class="span1 hidden-phone">18</td>
+                                <td><a href="javascript:void(0)">username18</a></td>
+                                <td class="hidden-phone hidden-tablet">user18@example.com</td>
+                                <td><span class="label label-important">Unapproved</span></td>
+                            </tr>
+                            <tr>
+                                <td class="span1">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-mini btn-success"><i class="icon-pencil"></i></a>
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-mini btn-danger"><i class="icon-remove"></i></a>
+                                    </div>
+                                </td>
+                                <td class="span1 hidden-phone">19</td>
+                                <td><a href="javascript:void(0)">username19</a></td>
+                                <td class="hidden-phone hidden-tablet">user19@example.com</td>
+                                <td><span class="label label-warning">Pending..</span></td>
+                            </tr>
+                            <tr>
+                                <td class="span1">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-mini btn-success"><i class="icon-pencil"></i></a>
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-mini btn-danger"><i class="icon-remove"></i></a>
+                                    </div>
+                                </td>
+                                <td class="span1 hidden-phone">20</td>
+                                <td><a href="javascript:void(0)">username20</a></td>
+                                <td class="hidden-phone hidden-tablet">user20@example.com</td>
+                                <td><span class="label">Inactive</span></td>
+                            </tr>
+                            <tr>
+                                <td class="span1">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-mini btn-success"><i class="icon-pencil"></i></a>
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-mini btn-danger"><i class="icon-remove"></i></a>
+                                    </div>
+                                </td>
+                                <td class="span1 hidden-phone">21</td>
+                                <td><a href="javascript:void(0)">username21</a></td>
+                                <td class="hidden-phone hidden-tablet">user21@example.com</td>
+                                <td><span class="label label-important">Unapproved</span></td>
+                            </tr>
+                            <tr>
+                                <td class="span1">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-mini btn-success"><i class="icon-pencil"></i></a>
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-mini btn-danger"><i class="icon-remove"></i></a>
+                                    </div>
+                                </td>
+                                <td class="span1 hidden-phone">22</td>
+                                <td><a href="javascript:void(0)">username22</a></td>
+                                <td class="hidden-phone hidden-tablet">user22@example.com</td>
+                                <td><span class="label label-important">Unapproved</span></td>
+                            </tr>
+                            <tr>
+                                <td class="span1">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-mini btn-success"><i class="icon-pencil"></i></a>
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-mini btn-danger"><i class="icon-remove"></i></a>
+                                    </div>
+                                </td>
+                                <td class="span1 hidden-phone">23</td>
+                                <td><a href="javascript:void(0)">username23</a></td>
+                                <td class="hidden-phone hidden-tablet">user23@example.com</td>
+                                <td><span class="label label-warning">Pending..</span></td>
+                            </tr>
+                            <tr>
+                                <td class="span1">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-mini btn-success"><i class="icon-pencil"></i></a>
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-mini btn-danger"><i class="icon-remove"></i></a>
+                                    </div>
+                                </td>
+                                <td class="span1 hidden-phone">24</td>
+                                <td><a href="javascript:void(0)">username24</a></td>
+                                <td class="hidden-phone hidden-tablet">user24@example.com</td>
+                                <td><span class="label">Inactive</span></td>
+                            </tr>
+                            <tr>
+                                <td class="span1">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-mini btn-success"><i class="icon-pencil"></i></a>
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-mini btn-danger"><i class="icon-remove"></i></a>
+                                    </div>
+                                </td>
+                                <td class="span1 hidden-phone">25</td>
+                                <td><a href="javascript:void(0)">username25</a></td>
+                                <td class="hidden-phone hidden-tablet">user25@example.com</td>
+                                <td><span class="label label-important">Unapproved</span></td>
+                            </tr>
+                            <tr>
+                                <td class="span1">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-mini btn-success"><i class="icon-pencil"></i></a>
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-mini btn-danger"><i class="icon-remove"></i></a>
+                                    </div>
+                                </td>
+                                <td class="span1 hidden-phone">26</td>
+                                <td><a href="javascript:void(0)">username26</a></td>
+                                <td class="hidden-phone hidden-tablet">user26@example.com</td>
+                                <td><span class="label label-info">Manual Approval</span></td>
+                            </tr>
+                            <tr>
+                                <td class="span1">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-mini btn-success"><i class="icon-pencil"></i></a>
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-mini btn-danger"><i class="icon-remove"></i></a>
+                                    </div>
+                                </td>
+                                <td class="span1 hidden-phone">27</td>
+                                <td><a href="javascript:void(0)">username27</a></td>
+                                <td class="hidden-phone hidden-tablet">user27@example.com</td>
+                                <td><span class="label label-info">Manual Approval</span></td>
+                            </tr>
+                            <tr>
+                                <td class="span1">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-mini btn-success"><i class="icon-pencil"></i></a>
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-mini btn-danger"><i class="icon-remove"></i></a>
+                                    </div>
+                                </td>
+                                <td class="span1 hidden-phone">28</td>
+                                <td><a href="javascript:void(0)">username28</a></td>
+                                <td class="hidden-phone hidden-tablet">user28@example.com</td>
+                                <td><span class="label">Inactive</span></td>
+                            </tr>
+                            <tr>
+                                <td class="span1">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-mini btn-success"><i class="icon-pencil"></i></a>
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-mini btn-danger"><i class="icon-remove"></i></a>
+                                    </div>
+                                </td>
+                                <td class="span1 hidden-phone">29</td>
+                                <td><a href="javascript:void(0)">username29</a></td>
+                                <td class="hidden-phone hidden-tablet">user29@example.com</td>
+                                <td><span class="label label-success">Approved!</span></td>
+                            </tr>
+                            <tr>
+                                <td class="span1">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-mini btn-success"><i class="icon-pencil"></i></a>
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-mini btn-danger"><i class="icon-remove"></i></a>
+                                    </div>
+                                </td>
+                                <td class="span1 hidden-phone">30</td>
+                                <td><a href="javascript:void(0)">username30</a></td>
+                                <td class="hidden-phone hidden-tablet">user30@example.com</td>
+                                <td><span class="label label-important">Unapproved</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- END Datatables -->
+
+                    <!-- Datatables in the grid -->
+                    <h3 class="page-header">Datatables <small>In the grid</small></h3>
+
+                    <div class="row-fluid">
+                        <div class="span6">
+                            <table id="example-datatables2" class="table table-striped table-bordered table-hover push">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th><i class="icon-user"></i> Username</th>
+                                        <th><i class="icon-bolt"></i> Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><a href="javascript:void(0)">username1</a></td>
+                                        <td><span class="label label-important">Unapproved</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td><a href="javascript:void(0)">username2</a></td>
+                                        <td><span class="label label-success">Approved!</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td><a href="javascript:void(0)">username3</a></td>
+                                        <td><span class="label">Inactive</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td><a href="javascript:void(0)">username4</a></td>
+                                        <td><span class="label">Inactive</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td><a href="javascript:void(0)">username5</a></td>
+                                        <td><span class="label label-important">Unapproved</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td><a href="javascript:void(0)">username6</a></td>
+                                        <td><span class="label label-warning">Pending..</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td><a href="javascript:void(0)">username7</a></td>
+                                        <td><span class="label label-success">Approved!</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td><a href="javascript:void(0)">username8</a></td>
+                                        <td><span class="label label-info">Manual Approval</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td><a href="javascript:void(0)">username9</a></td>
+                                        <td><span class="label label-info">Manual Approval</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td><a href="javascript:void(0)">username10</a></td>
+                                        <td><span class="label label-success">Approved!</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td><a href="javascript:void(0)">username11</a></td>
+                                        <td><span class="label label-inverse">Spam Account</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td><a href="javascript:void(0)">username12</a></td>
+                                        <td><span class="label label-success">Approved!</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td>
+                                        <td><a href="javascript:void(0)">username13</a></td>
+                                        <td><span class="label label-important">Unapproved</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>14</td>
+                                        <td><a href="javascript:void(0)">username14</a></td>
+                                        <td><span class="label label-success">Approved!</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td><a href="javascript:void(0)">username15</a></td>
+                                        <td><span class="label label-important">Unapproved</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>16</td>
+                                        <td><a href="javascript:void(0)">username16</a></td>
+                                        <td><span class="label label-important">Unapproved</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>17</td>
+                                        <td><a href="javascript:void(0)">username17</a></td>
+                                        <td><span class="label label-success">Approved!</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>18</td>
+                                        <td><a href="javascript:void(0)">username18</a></td>
+                                        <td><span class="label label-info">Manual Approval</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>19</td>
+                                        <td><a href="javascript:void(0)">username19</a></td>
+                                        <td><span class="label label-warning">Pending..</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>20</td>
+                                        <td><a href="javascript:void(0)">username20</a></td>
+                                        <td><span class="label label-inverse">Spam Account</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>21</td>
+                                        <td><a href="javascript:void(0)">username21</a></td>
+                                        <td><span class="label label-important">Unapproved</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>22</td>
+                                        <td><a href="javascript:void(0)">username22</a></td>
+                                        <td><span class="label label-inverse">Spam Account</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>23</td>
+                                        <td><a href="javascript:void(0)">username23</a></td>
+                                        <td><span class="label label-success">Approved!</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>24</td>
+                                        <td><a href="javascript:void(0)">username24</a></td>
+                                        <td><span class="label label-info">Manual Approval</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>25</td>
+                                        <td><a href="javascript:void(0)">username25</a></td>
+                                        <td><span class="label label-info">Manual Approval</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>26</td>
+                                        <td><a href="javascript:void(0)">username26</a></td>
+                                        <td><span class="label label-info">Manual Approval</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>27</td>
+                                        <td><a href="javascript:void(0)">username27</a></td>
+                                        <td><span class="label">Inactive</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>28</td>
+                                        <td><a href="javascript:void(0)">username28</a></td>
+                                        <td><span class="label label-info">Manual Approval</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>29</td>
+                                        <td><a href="javascript:void(0)">username29</a></td>
+                                        <td><span class="label label-success">Approved!</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>30</td>
+                                        <td><a href="javascript:void(0)">username30</a></td>
+                                        <td><span class="label label-success">Approved!</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="span6">
+                            <table id="example-datatables3" class="table table-striped table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th><i class="icon-user"></i> Username</th>
+                                        <th><i class="icon-bolt"></i> Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><a href="javascript:void(0)">username1</a></td>
+                                        <td><span class="label label-warning">Pending..</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td><a href="javascript:void(0)">username2</a></td>
+                                        <td><span class="label label-inverse">Spam Account</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td><a href="javascript:void(0)">username3</a></td>
+                                        <td><span class="label label-inverse">Spam Account</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td><a href="javascript:void(0)">username4</a></td>
+                                        <td><span class="label label-info">Manual Approval</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td><a href="javascript:void(0)">username5</a></td>
+                                        <td><span class="label label-info">Manual Approval</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td><a href="javascript:void(0)">username6</a></td>
+                                        <td><span class="label label-info">Manual Approval</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td><a href="javascript:void(0)">username7</a></td>
+                                        <td><span class="label label-warning">Pending..</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td><a href="javascript:void(0)">username8</a></td>
+                                        <td><span class="label">Inactive</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td><a href="javascript:void(0)">username9</a></td>
+                                        <td><span class="label">Inactive</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td><a href="javascript:void(0)">username10</a></td>
+                                        <td><span class="label label-important">Unapproved</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td><a href="javascript:void(0)">username11</a></td>
+                                        <td><span class="label label-important">Unapproved</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td><a href="javascript:void(0)">username12</a></td>
+                                        <td><span class="label label-warning">Pending..</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td>
+                                        <td><a href="javascript:void(0)">username13</a></td>
+                                        <td><span class="label label-warning">Pending..</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>14</td>
+                                        <td><a href="javascript:void(0)">username14</a></td>
+                                        <td><span class="label label-important">Unapproved</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td><a href="javascript:void(0)">username15</a></td>
+                                        <td><span class="label label-success">Approved!</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>16</td>
+                                        <td><a href="javascript:void(0)">username16</a></td>
+                                        <td><span class="label label-success">Approved!</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>17</td>
+                                        <td><a href="javascript:void(0)">username17</a></td>
+                                        <td><span class="label label-warning">Pending..</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>18</td>
+                                        <td><a href="javascript:void(0)">username18</a></td>
+                                        <td><span class="label">Inactive</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>19</td>
+                                        <td><a href="javascript:void(0)">username19</a></td>
+                                        <td><span class="label label-success">Approved!</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>20</td>
+                                        <td><a href="javascript:void(0)">username20</a></td>
+                                        <td><span class="label label-inverse">Spam Account</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>21</td>
+                                        <td><a href="javascript:void(0)">username21</a></td>
+                                        <td><span class="label label-success">Approved!</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>22</td>
+                                        <td><a href="javascript:void(0)">username22</a></td>
+                                        <td><span class="label label-info">Manual Approval</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>23</td>
+                                        <td><a href="javascript:void(0)">username23</a></td>
+                                        <td><span class="label">Inactive</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>24</td>
+                                        <td><a href="javascript:void(0)">username24</a></td>
+                                        <td><span class="label label-success">Approved!</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>25</td>
+                                        <td><a href="javascript:void(0)">username25</a></td>
+                                        <td><span class="label label-inverse">Spam Account</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>26</td>
+                                        <td><a href="javascript:void(0)">username26</a></td>
+                                        <td><span class="label label-warning">Pending..</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>27</td>
+                                        <td><a href="javascript:void(0)">username27</a></td>
+                                        <td><span class="label label-inverse">Spam Account</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>28</td>
+                                        <td><a href="javascript:void(0)">username28</a></td>
+                                        <td><span class="label label-info">Manual Approval</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>29</td>
+                                        <td><a href="javascript:void(0)">username29</a></td>
+                                        <td><span class="label label-warning">Pending..</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>30</td>
+                                        <td><a href="javascript:void(0)">username30</a></td>
+                                        <td><span class="label label-success">Approved!</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- END Datatables in the grid -->
+                </div>
+                <!-- END Page Content -->
+
+                <!-- Footer -->
+                <footer>
+                    <span id="year-copy"></span> &copy; <strong><a href="http://goo.gl/9QhXQ">uAdmin 1.3.2</a></strong> - Crafted with <i class="icon-heart"></i> by <strong><a href="http://goo.gl/vNS3I" target="_blank">pixelcave</a></strong>
+                </footer>
+                <!-- END Footer -->
+            </div>
+            <!-- END Inner Container -->
+        </div>
+        <!-- END Page Container -->
+
+        <!-- Scroll to top link, check main.js - scrollToTop() -->
+        <a href="#" id="to-top"><i class="icon-chevron-up"></i></a>
+
+        <!-- User Modal Settings, appears when clicking on 'User Settings' link found on user dropdown menu (header, top right) -->
+        <div id="modal-user-settings" class="modal hide">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4>Profile Settings</h4>
+            </div>
+            <!-- END Modal Header -->
+
+            <!-- Modal Content -->
+            <div class="modal-body">
+                <!-- Example Tabs, initialized at main.js - uiDemo() -->
+                <!-- Tab links -->
+                <ul id="example-user-tabs" class="nav nav-tabs">
+                    <li class="active"><a href="#example-user-tabs-account"><i class="icon-cogs"></i> Account</a></li>
+                    <li><a href="#example-user-tabs-profile"><i class="icon-user"></i> Profile</a></li>
+                </ul>
+                <!-- END Tab links -->
+
+                <!-- END Tab Content -->
+                <div class="tab-content">
+                    <!-- First Tab -->
+                    <div class="tab-pane active" id="example-user-tabs-account">
+                        <div class="alert alert-success">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            <strong>Success!</strong> Password changed!
+                        </div>
+                        <form class="form-horizontal">
+                            <div class="control-group">
+                                <label class="control-label" for="example-user-username">Username</label>
+                                <div class="controls">
+                                    <input type="text" id="example-user-username" class="disabled" value="administrator" disabled="">
+                                    <span class="help-block">You can't change your username!</span>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="example-user-pass">Password</label>
+                                <div class="controls">
+                                    <input type="password" id="example-user-pass">
+                                    <span class="help-block">if you want to change your password enter your current for confirmation!</span>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="example-user-newpass">New Password</label>
+                                <div class="controls">
+                                    <input type="password" id="example-user-newpass">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- END First Tab -->
+
+                    <!-- Second Tab -->
+                    <div class="tab-pane" id="example-user-tabs-profile">
+                        <h5 class="page-header-sub hidden-phone">Image</h5>
+                        <div class="form-horizontal hidden-phone">
+                            <div class="control-group">
+                                <img src="img/placeholders/image_dark_120x120.png" alt="image">
+                            </div>
+                            <div class="control-group">
+                                <form action="index.html" class="dropzone">
+                                    <div class="fallback">
+                                        <input name="file" type="file">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <form class="form-horizontal">
+                            <h5 class="page-header-sub">Details</h5>
+                            <div class="control-group">
+                                <label class="control-label" for="example-user-firstname">Firstname</label>
+                                <div class="controls">
+                                    <input type="text" id="example-user-firstname" value="John">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="example-user-lastname">Lastname</label>
+                                <div class="controls">
+                                    <input type="text" id="example-user-lastname" value="Doe">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="example-user-gender">Gender</label>
+                                <div class="controls">
+                                    <select id="example-user-gender">
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="example-user-birthdate">Birthdate</label>
+                                <div class="controls">
+                                    <div class="input-append">
+                                        <input type="text" id="example-user-birthdate" class="input-small input-datepicker">
+                                        <span class="add-on"><i class="icon-calendar"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="example-user-skills">Skills</label>
+                                <div class="controls">
+                                    <select id="example-user-skills" multiple="multiple" class="select-chosen">
+                                        <option selected>html</option>
+                                        <option selected>css</option>
+                                        <option>javascript</option>
+                                        <option>php</option>
+                                        <option>mysql</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="example-user-bio">Bio</label>
+                                <div class="controls">
+                                    <textarea id="example-user-bio" class="textarea-elastic" rows="3">Bio Information..</textarea>
+                                </div>
+                            </div>
+                            <h5 class="page-header-sub">Social</h5>
+                            <div class="control-group">
+                                <label class="control-label" for="example-user-fb">Facebook</label>
+                                <div class="controls">
+                                    <div class="input-append">
+                                        <input type="text" id="example-user-fb">
+                                        <span class="add-on"><i class="icon-facebook"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="example-user-twitter">Twitter</label>
+                                <div class="controls">
+                                    <div class="input-append">
+                                        <input type="text" id="example-user-twitter">
+                                        <span class="add-on"><i class="icon-twitter"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="example-user-pinterest">Pinterest</label>
+                                <div class="controls">
+                                    <div class="input-append">
+                                        <input type="text" id="example-user-pinterest">
+                                        <span class="add-on"><i class="icon-pinterest"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="example-user-github">Github</label>
+                                <div class="controls">
+                                    <div class="input-append">
+                                        <input type="text" id="example-user-github">
+                                        <span class="add-on"><i class="icon-github"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- END Second Tab -->
+                </div>
+                <!-- END Tab Content -->
+            </div>
+            <!-- END Modal Content -->
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button class="btn btn-danger" data-dismiss="modal"><i class="icon-remove"></i> Close</button>
+                <button class="btn btn-success"><i class="icon-spinner icon-spin"></i> Save changes</button>
+            </div>
+            <!-- END Modal footer -->
+        </div>
+        <!-- END User Modal Settings -->
+
+        <!-- Excanvas for Flot (Charts plugin) support on IE8 -->
+        <!--[if lte IE 8]><script src="js/helpers/excanvas.min.js"></script><![endif]-->
+
+        <!-- Jquery library from Google ... -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <!-- ... but if something goes wrong get Jquery from local file -->
+        <script>!window.jQuery && document.write(unescape('%3Cscript src="js/vendor/jquery-1.9.1.min.js"%3E%3C/script%3E'));</script>
+
+        <!-- Bootstrap.js -->
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <!--
+        Include Google Maps API for global use.
+        If you don't want to use  Google Maps API globally, just remove this line and the gmaps.js plugin from js/plugins.js (you can put it in a seperate file)
+        Then iclude them both in the pages you would like to use the google maps functionality
+        -->
+        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+
+        <!-- Jquery plugins and custom javascript code -->
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <!-- Javascript code only for this page -->
+        <script>
+            $(function() {
+                /* Initialize Datatables */
+                $('#example-datatables').dataTable({"aoColumnDefs": [{"bSortable": false, "aTargets": [0]}]});
+                $('#example-datatables2').dataTable();
+                $('#example-datatables3').dataTable();
+            });
+        </script>
+
+    </body>
+</html>
