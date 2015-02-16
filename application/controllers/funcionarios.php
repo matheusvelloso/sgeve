@@ -76,15 +76,17 @@ class Funcionarios extends CI_Controller {
 		$dados 			= array('idempresa' => $idempresa, 'idfuncionario' => $idfuncionario);
 
 		$funcionario 	= $this->funcionarios_model->buscaEnquanto($dados);
-		
-		if ($funcionario['nivel'] > 1) {
-			$usuario = $this->usuarios_model->buscaEnquanto(array('idfuncionario' => $funcionario['idfuncionario']));
-			//continue aqui
-		}
-
 		if (!empty($funcionario)) {
+
+			$funcionario['email'] = null;
+			$funcionario['senha'] = null;
+
 			if (!$this->input->post('documento')){
-				
+				if ($funcionario['nivel'] > '0') {
+					$usuario = $this->usuarios_model->buscaEnquanto(array('idfuncionario' => $funcionario['idfuncionario']));
+					$funcionario['email'] = $usuario['email'];
+					$funcionario['senha'] = $usuario['senha'];
+				}
 				$dados 		= array('funcionario' => $funcionario);
 				$this->load->view('funcionarios/editar', $dados);
 					
@@ -101,11 +103,17 @@ class Funcionarios extends CI_Controller {
 						'telefone'		=> $this->input->post('telefone'),
 						'idempresa'		=> $this->session->userdata('usuario_logado')['idempresa']
 					);
-					if ($this->input->post('painel_adm') == '1') {
+					// atualiza nivel do funcionario de acordo com o nivel do usuario logado
+					if ($this->session->userdata('usuario_logado')['nivel'] > '1') {
+						if ($this->input->post('painel_adm') == '1') {
 							$funcionario['nivel'] = '1';
-					}
-					if ($this->input->post('painel_adm') == '1' and $this->input->post('mais_privado') == '1') {
-							$funcionario['nivel'] = '2';	
+							if ($this->input->post('mais_privado') == '1') {
+								$funcionario['nivel'] = '2';
+							}
+						}
+						else{
+							$funcionario['nivel'] = '0';
+						}
 					}
 					if ($funcionario['nivel'] == '0') {
 						$usuario = $this->usuarios_model->buscaEnquanto(array('idfuncionario' => $idfuncionario));
@@ -113,29 +121,34 @@ class Funcionarios extends CI_Controller {
 							$this->usuarios_model->deletaUsuario($usuario);
 						}
 					}
+					//Testar módulo de edição
 					$this->funcionarios_model->atualizaFuncionario($funcionario);
 					$this->session->set_flashdata('sucesso_acao','Funcionário atualizado com sucesso.');
 					redirect('funcionarios');
-					
 					
 			}
 		
 		} else {
 			$this->session->set_flashdata('falha_acao','Não foi possível executar a ação desejada.');
-			redirect('clientes');
+			redirect('funcionarios');
 		}
 		
 	}
 
 	public function deletar($idfuncionario){
 			
+
 		$idempresa 	= $this->session->userdata('usuario_logado')['idempresa'];
 		
 		$dados = array('idempresa' => $idempresa, 'idfuncionario' => $idfuncionario);
 
 		$funcionario 	= $this->funcionarios_model->buscaEnquanto($dados);
+		
 		if (!empty($funcionario)) {
-			
+			if ($this->session->userdata('usuario_logado')['nivel'] <= $funcionario['nivel']){
+			    $this->session->set_flashdata('falha_acao','Não foi possível executar a ação desejada.');
+			    redirect('funcionarios');
+			}	
 			$this->funcionarios_model->deletaFuncionario($dados);
 			$this->session->set_flashdata('sucesso_acao','Funcionário deletado com sucesso.');
 			redirect('funcionarios');

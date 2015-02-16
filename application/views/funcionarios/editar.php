@@ -1,4 +1,8 @@
 <?php $usuario_logado = $this->session->userdata('usuario_logado') ?>
+<?php if ($usuario_logado['nivel'] <= $funcionario['nivel']){
+    $this->session->set_flashdata('falha_acao','Não foi possível executar a ação desejada.');
+    redirect('funcionarios');
+}?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
