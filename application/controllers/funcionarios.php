@@ -79,13 +79,12 @@ class Funcionarios extends CI_Controller {
 		if (!empty($funcionario)) {
 
 			$funcionario['email'] = null;
-			$funcionario['senha'] = null;
 
 			if (!$this->input->post('documento')){
 				if ($funcionario['nivel'] > '0') {
 					$usuario = $this->usuarios_model->buscaEnquanto(array('idfuncionario' => $funcionario['idfuncionario']));
 					$funcionario['email'] = $usuario['email'];
-					$funcionario['senha'] = $usuario['senha'];
+					
 				}
 				$dados 		= array('funcionario' => $funcionario);
 				$this->load->view('funcionarios/editar', $dados);
@@ -110,6 +109,15 @@ class Funcionarios extends CI_Controller {
 							if ($this->input->post('mais_privado') == '1') {
 								$funcionario['nivel'] = '2';
 							}
+							//cadastra usuario caso nao tenha usuario para o funcionario
+							$usuario = $this->usuarios_model->buscaEnquanto(array('idfuncionario' => $idfuncionario));
+							if (empty($usuario)) {
+								if ($this->input->post('email') && $this->input->post('senha')) {
+									
+								}
+							} else{
+
+							}
 						}
 						else{
 							$funcionario['nivel'] = '0';
@@ -122,6 +130,9 @@ class Funcionarios extends CI_Controller {
 						}
 					}
 					//Testar módulo de edição
+					//$this->output->enable_profiler(TRUE);
+					var_dump($funcionario);
+					exit;
 					$this->funcionarios_model->atualizaFuncionario($funcionario);
 					$this->session->set_flashdata('sucesso_acao','Funcionário atualizado com sucesso.');
 					redirect('funcionarios');

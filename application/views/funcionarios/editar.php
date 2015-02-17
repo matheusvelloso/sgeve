@@ -34,7 +34,7 @@
                     <!-- END Navigation info -->
 
                     <!-- Form -->
-                    <?php echo form_open('funcionarios/novo',array('class' => 'form-horizontal form-box')); ?>
+                    <?php echo form_open("funcionarios/{$funcionario['idfuncionario']}",array('class' => 'form-horizontal form-box')); ?>
                         <h4 class="form-box-header">Cadastrar Novo Funcionário</h4>
                         <div class="form-box-content">
                             <div class="control-group">
