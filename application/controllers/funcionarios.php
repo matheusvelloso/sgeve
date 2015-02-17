@@ -113,7 +113,11 @@ class Funcionarios extends CI_Controller {
 							$usuario = $this->usuarios_model->buscaEnquanto(array('idfuncionario' => $idfuncionario));
 							if (empty($usuario)) {
 								if ($this->input->post('email') && $this->input->post('senha')) {
-									
+									$usuario = array(
+										'email' => $this->input->post('email'),
+										'senha'	=> md5($this->input->post('senha')),
+										'idfuncionario' => $idfuncionario
+									);
 								}
 							} else{
 
